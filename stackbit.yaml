@@ -134,7 +134,6 @@ models:
         description: Footer sections
         items:
           type: model
-          labelField: title
           models:
             - footer_form
             - footer_nav
@@ -275,7 +274,6 @@ models:
         description: Page sections
         items:
           type: model
-          labelField: title
           models:
             - section_content
             - section_cta
@@ -734,7 +732,6 @@ models:
         name: url
         label: URL
         required: true
-        widget: url
       - type: enum
         name: style
         label: Style
@@ -849,7 +846,6 @@ models:
             - noimageindex
             - notranslate
             - none
-          default: all
       - type: list
         name: extra
         label: Extra
