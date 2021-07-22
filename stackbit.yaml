@@ -255,7 +255,8 @@ models:
         name: sections
         label: Sections
         description: Page sections
-        default: ['section_hero']
+        default:
+          
         items:
           type: model
           models:
