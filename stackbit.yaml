@@ -572,6 +572,7 @@ models:
         name: image
         label: Image
         description: The image of the section
+        default: image/
       - type: string
         name: image_alt
         label: Image Alt Text
