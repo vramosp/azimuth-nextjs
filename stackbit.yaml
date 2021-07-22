@@ -257,9 +257,16 @@ models:
         description: Page sections
         items:
           type: model
-          labelField: title
           models:
+            - section_content
+            - section_cta
+            - section_faq
+            - section_features
             - section_hero
+            - section_posts
+            - section_pricing
+            - section_reviews
+            - section_contact
         default:
             - type: section_hero
               image: images/hero.png
@@ -272,18 +279,6 @@ models:
                 - label: Learn More
                   url: /features
                   style: primary
-        items:
-          type: model
-          models:
-            - section_content
-            - section_cta
-            - section_faq
-            - section_features
-            - section_hero
-            - section_posts
-            - section_pricing
-            - section_reviews
-            - section_contact
       - type: model
         name: seo
         models:
