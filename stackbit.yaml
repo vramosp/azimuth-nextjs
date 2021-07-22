@@ -562,17 +562,14 @@ models:
         name: title
         label: Title
         description: The title of the section
-        default: This is a big hero section
       - type: markdown
         name: content
         label: Content
         description: The text content of the section
-        default: this is a test
       - type: image
         name: image
         label: Image
         description: The image of the section
-        default: image/
       - type: string
         name: image_alt
         label: Image Alt Text
