@@ -255,6 +255,7 @@ models:
         name: sections
         label: Sections
         description: Page sections
+        items
         default:
               type: section_hero
               image: images/hero.png
