@@ -562,6 +562,7 @@ models:
         name: title
         label: Title
         description: The title of the section
+        default: This is a big hero section
       - type: markdown
         name: content
         label: Content
