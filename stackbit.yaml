@@ -567,6 +567,7 @@ models:
         name: content
         label: Content
         description: The text content of the section
+        default: this is a test
       - type: image
         name: image
         label: Image
