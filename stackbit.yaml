@@ -273,8 +273,7 @@ models:
               image_alt: App preview
               title: This is your new headline
               content: >-
-                Azimuth is the perfect theme for developers, designers and entrepreneurs
-                who need a sleek, modern SaaS site.
+                A paragraph that describes why we're here and how fun this journey is going to be.
               actions:
                 - label: Learn More
                   url: /features
