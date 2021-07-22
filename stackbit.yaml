@@ -255,6 +255,7 @@ models:
         name: sections
         label: Sections
         description: Page sections
+        default: []
         items:
           type: model
           models:
