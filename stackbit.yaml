@@ -718,16 +718,19 @@ models:
       - type: string
         name: author
         label: Author
-        
+        default: John Doe
       - type: image
         name: avatar
         label: Author Image
+        default: images/review3.jpg
       - type: string
         name: avatar_alt
         label: Author Image Alt Text
+        default: John Doe
       - type: text
         name: content
         label: Content
+        default: I love this product, it not only makes my life easier but it's also super fun to use.
   section_contact:
     type: object
     label: Contact Section
