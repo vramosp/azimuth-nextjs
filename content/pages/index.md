@@ -84,6 +84,13 @@ sections:
           Sed laoreet magna commodo libero euismod sodales. Nunc ac libero
           convallis, interdum ligula vel, pretium diam. Integer commodo sem at
           dui sollicitudin, vel posuere justo laoreet.
+      - author: John Doe
+        avatar: images/review3.jpg
+        avatar_alt: John Doe
+        content: >-
+          I love this product, it not only makes my life easier but it's also
+          super fun to use.
+        type: review_item
       - author: Jonquil Von Haggerston
         avatar: images/review3.jpg
         avatar_alt: Jonquil Von Haggerston's photo
