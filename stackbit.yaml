@@ -250,7 +250,7 @@ models:
         label: Title
         description: The title of the page
         required: true
-        default: This is a Big Hero Headline
+        default: New landing page
       - type: list
         name: sections
         label: Sections
