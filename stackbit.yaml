@@ -1,42 +1,17 @@
-# The stackbit.yaml file lets you define the characteristic of your website
-# needed to make your theme, or project, work with Stackbit. For more info about
-# stackbit.yaml configuration visit https://www.stackbit.com/docs/stackbit-yaml/
 stackbitVersion: ~0.3.0
 ssgName: nextjs
 cmsName: git
-
-# The "buildCommand" and the "publishDir" properties are used to configure the
-# serverless deployment platform when Stackbit creates a new site from this theme.
 buildCommand: npm run build
 publishDir: out
-
-# The following properties define the content schema of the site. It allows
-# Stackbit Studio to present on-page editing experience, as well as other
-# advanced editing capabilities.
-
-# assets define how assets are referenced by static site generator
-# for more info about assets visit: https://www.stackbit.com/docs/stackbit-yaml/assets/
 assets:
   referenceType: static
   staticDir: public
   uploadDir: images
   publicPath: /
-
-# dataDir defines the folder for files described by models of type 'data'.
-# The model properties 'folder', 'match' and 'exclude' should be relative to dataDir
 dataDir: content/data
-
-# pagesDir defines the folder for files described by models of type 'page'.
-# The model properties 'folder', 'match' and 'exclude' should be relative to dataDir
 pagesDir: content/pages
-
-# pageLayoutKey is additional filtering property that specifies which page field
-# should be used to match a page to a model, by model name, in case when pages
-# belonging to different models are located in the same folder
 pageLayoutKey: layout
-
-# These are the models of the website
-# for more info about models visit: https://www.stackbit.com/docs/stackbit-yaml/models/
+nodeVersion: 12
 models:
   config:
     type: data
@@ -252,12 +227,16 @@ models:
     fields:
       - type: string
         name: first_name
+        label: First Name
       - type: string
         name: last_name
+        label: Last Name
       - type: markdown
         name: bio
+        label: Bio
       - type: image
         name: photo
+        label: Photo
   landing:
     type: page
     label: Landing Page
@@ -289,6 +268,7 @@ models:
         name: seo
         models:
           - stackbit_page_meta
+        label: Seo
   blog:
     type: page
     urlPath: /blog
@@ -307,11 +287,13 @@ models:
         name: seo
         models:
           - stackbit_page_meta
+        label: Seo
   page:
     type: page
     label: Page
     layout: page
-    exclude: blog/**
+    exclude:
+      - blog/**
     fields:
       - type: string
         name: title
@@ -334,6 +316,7 @@ models:
         name: seo
         models:
           - stackbit_page_meta
+        label: Seo
   post:
     type: page
     urlPath: '/blog/{slug}'
@@ -359,6 +342,7 @@ models:
         description: Post author
         models:
           - person
+        label: Author
       - type: string
         name: excerpt
         label: Excerpt
@@ -383,6 +367,7 @@ models:
         name: seo
         models:
           - stackbit_page_meta
+        label: Seo
   section:
     type: object
     label: Section
@@ -399,9 +384,15 @@ models:
   section_content:
     type: object
     label: Content Section
-    extends:
-      - section
     fields:
+      - type: string
+        name: section_id
+        label: Section ID
+        description: 'A unique identifier of the section, must not contain whitespace'
+      - type: string
+        name: title
+        label: Title
+        description: The title of the section
       - type: markdown
         name: content
         label: Content
@@ -429,12 +420,19 @@ models:
           type: model
           models:
             - action
+    labelField: title
   section_cta:
     type: object
     label: Call to Action Section
-    extends:
-      - section
     fields:
+      - type: string
+        name: section_id
+        label: Section ID
+        description: 'A unique identifier of the section, must not contain whitespace'
+      - type: string
+        name: title
+        label: Title
+        description: The title of the section
       - type: string
         name: subtitle
         label: Subtitle
@@ -446,12 +444,19 @@ models:
           type: model
           models:
             - action
+    labelField: title
   section_faq:
     type: object
     label: FAQ Section
-    extends:
-      - section
     fields:
+      - type: string
+        name: section_id
+        label: Section ID
+        description: 'A unique identifier of the section, must not contain whitespace'
+      - type: string
+        name: title
+        label: Title
+        description: The title of the section
       - type: string
         name: subtitle
         label: Subtitle
@@ -471,6 +476,7 @@ models:
           type: model
           models:
             - faq_item
+    labelField: title
   faq_item:
     type: object
     label: FAQ Item
@@ -484,9 +490,15 @@ models:
   section_features:
     type: object
     label: Features Section
-    extends:
-      - section
     fields:
+      - type: string
+        name: section_id
+        label: Section ID
+        description: 'A unique identifier of the section, must not contain whitespace'
+      - type: string
+        name: title
+        label: Title
+        description: The title of the section
       - type: string
         name: subtitle
         label: Subtitle
@@ -506,6 +518,7 @@ models:
           type: model
           models:
             - feature_item
+    labelField: title
   feature_item:
     type: object
     label: Feature Item
@@ -536,9 +549,15 @@ models:
   section_hero:
     type: object
     label: Hero Section
-    extends:
-      - section
     fields:
+      - type: string
+        name: section_id
+        label: Section ID
+        description: 'A unique identifier of the section, must not contain whitespace'
+      - type: string
+        name: title
+        label: Title
+        description: The title of the section
       - type: markdown
         name: content
         label: Content
@@ -558,12 +577,19 @@ models:
           type: model
           models:
             - action
+    labelField: title
   section_posts:
     type: object
     label: Posts List
-    extends:
-      - section
     fields:
+      - type: string
+        name: section_id
+        label: Section ID
+        description: 'A unique identifier of the section, must not contain whitespace'
+      - type: string
+        name: title
+        label: Title
+        description: The title of the section
       - type: string
         name: subtitle
         label: Subtitle
@@ -576,12 +602,19 @@ models:
           - gray
           - white
         default: gray
+    labelField: title
   section_pricing:
     type: object
     label: Pricing Section
-    extends:
-      - section
     fields:
+      - type: string
+        name: section_id
+        label: Section ID
+        description: 'A unique identifier of the section, must not contain whitespace'
+      - type: string
+        name: title
+        label: Title
+        description: The title of the section
       - type: string
         name: subtitle
         label: Subtitle
@@ -601,6 +634,7 @@ models:
           type: model
           models:
             - pricing_plan
+    labelField: title
   pricing_plan:
     type: object
     label: Pricing Plan
@@ -633,9 +667,15 @@ models:
   section_reviews:
     type: object
     label: Reviews Section
-    extends:
-      - section
     fields:
+      - type: string
+        name: section_id
+        label: Section ID
+        description: 'A unique identifier of the section, must not contain whitespace'
+      - type: string
+        name: title
+        label: Title
+        description: The title of the section
       - type: string
         name: subtitle
         label: Subtitle
@@ -655,6 +695,7 @@ models:
           type: model
           models:
             - review_item
+    labelField: title
   review_item:
     type: object
     label: Review Item
@@ -675,9 +716,15 @@ models:
   section_contact:
     type: object
     label: Contact Section
-    extends:
-      - section
     fields:
+      - type: string
+        name: section_id
+        label: Section ID
+        description: 'A unique identifier of the section, must not contain whitespace'
+      - type: string
+        name: title
+        label: Title
+        description: The title of the section
       - type: string
         name: subtitle
         label: Subtitle
@@ -720,6 +767,7 @@ models:
         name: submit_label
         label: Submit Button Label
         required: true
+    labelField: title
   action:
     type: object
     label: Action
@@ -814,6 +862,8 @@ models:
         name: options
         label: Options
         description: The list of options for select field
+        items:
+          type: string
       - type: boolean
         name: is_required
         label: Is the field required?
@@ -860,11 +910,15 @@ models:
             - type: string
               name: name
               default: ''
+              label: Name
             - type: string
               name: value
               default: ''
+              label: Value
             - type: string
               name: keyName
               default: name
+              label: Key Name
             - type: boolean
               name: relativeUrl
+              label: Relative Url
