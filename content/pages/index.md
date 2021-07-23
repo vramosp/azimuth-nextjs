@@ -97,6 +97,13 @@ sections:
           I love this product, it not only makes my life easier but it's also
           super fun to use.
         type: review_item
+      - author: John Doe
+        avatar: images/review3.jpg
+        avatar_alt: John Doe
+        content: >-
+          I love this product, it not only makes my life easier but it's also
+          super fun to use.
+        type: review_item
   - section_id: call-to-action
     type: section_cta
     title: This Is Call To Action Block!
