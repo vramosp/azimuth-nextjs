@@ -498,10 +498,6 @@ models:
         label: Subtitle
         description: The subtitle of the section
         default: This is an optional description for the call to action block.
-    actions:
-      - label: Get Started
-        url: '#'
-        style: secondary
       - type: list
         name: actions
         label: Action Buttons
