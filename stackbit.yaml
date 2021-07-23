@@ -304,9 +304,9 @@ models:
             title: This is a call to action block
             subtitle: This is an optional description for the call to action block.
             actions:
-            - label: Get Started
-              url: '#'
-              style: secondary
+              - label: Get Started
+                url: '#'
+                style: secondary
       - type: model
         name: seo
         models:
