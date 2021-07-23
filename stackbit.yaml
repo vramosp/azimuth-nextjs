@@ -836,6 +836,7 @@ models:
         name: label
         label: Label
         required: true
+        default: Try it now
       - type: string
         name: url
         label: URL
