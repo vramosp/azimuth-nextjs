@@ -301,7 +301,7 @@ models:
                     icon: arrow-right
                     icon_position: right
           - type: section_cta
-              title: This Is Call to Action Block!
+              title: This is a call to action block
               subtitle: This is an optional description for the call to action block.
               actions:
                 - label: Get Started
