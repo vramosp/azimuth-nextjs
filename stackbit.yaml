@@ -839,7 +839,7 @@ models:
         default: Try it now
       - type: string
         name: url
-        label: URL
+        label: Button
         required: true
       - type: enum
         name: style
