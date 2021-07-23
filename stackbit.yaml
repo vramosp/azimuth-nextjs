@@ -492,8 +492,7 @@ models:
         name: title
         label: Title
         description: The title of the section
-        type: section_cta
-    title: This is a call to action block
+        default: This is a call to action block
     subtitle: This is an optional description for the call to action block.
     actions:
       - label: Get Started
