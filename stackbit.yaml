@@ -382,6 +382,7 @@ models:
         label: Title
         description: The title of the post
         required: true
+        default: This is a new post
       - type: string
         name: subtitle
         label: Subtitle
