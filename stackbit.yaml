@@ -230,6 +230,7 @@ models:
       - type: string
         name: first_name
         label: First Name
+        default: John
       - type: string
         name: last_name
         label: Last Name
