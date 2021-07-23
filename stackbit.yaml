@@ -234,6 +234,7 @@ models:
       - type: string
         name: last_name
         label: Last Name
+        default: Doe
       - type: markdown
         name: bio
         label: Bio
