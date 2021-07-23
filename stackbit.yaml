@@ -341,6 +341,7 @@ models:
         name: subtitle
         label: Subtitle
         description: The text shown below the page title
+        default: This is the subtitle of the new page
       - type: image
         name: image
         label: Image
