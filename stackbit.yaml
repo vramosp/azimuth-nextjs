@@ -505,6 +505,8 @@ models:
           type: model
           models:
             - action
+          default:
+            - type: action
               label: Get Started
               url: '#'
               style: secondary
