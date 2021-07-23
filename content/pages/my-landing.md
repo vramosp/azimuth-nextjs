@@ -38,6 +38,11 @@ sections:
     subtitle: This is an optional description for the call to action block.
     actions: []
     type: section_cta
+  - section_id: lorem-ipsum
+    title: This is a call to action block
+    subtitle: This is an optional description for the call to action block.
+    actions: []
+    type: section_cta
   - type: section_cta
     title: This is a call to action block
     subtitle: This is an optional description for the call to action block.
