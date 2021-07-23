@@ -387,6 +387,7 @@ models:
         name: subtitle
         label: Subtitle
         description: The text shown just below the title or the featured image
+        default: Write here a beautiful subtitle that people will love
       - type: date
         name: date
         label: Date
