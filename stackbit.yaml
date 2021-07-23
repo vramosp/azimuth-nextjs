@@ -238,6 +238,7 @@ models:
       - type: markdown
         name: bio
         label: Bio
+        default: T
       - type: image
         name: photo
         label: Photo
