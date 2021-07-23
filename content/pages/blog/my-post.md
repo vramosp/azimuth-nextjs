@@ -2,7 +2,7 @@
 title: This is a new post
 subtitle: Write here a beautiful subtitle that people will love
 date: '2021-07-23'
-excerpt: lorem-ipsum
+excerpt: Write here a beautiful subtitle that people will love
 image_alt: lorem-ipsum
 thumb_image_alt: lorem-ipsum
 seo:
