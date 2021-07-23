@@ -402,6 +402,7 @@ models:
         name: excerpt
         label: Excerpt
         description: The excerpt of the post displayed in the blog feed
+        default: Write here a beautiful subtitle that people will love
       - type: image
         name: image
         label: Image (single post)
