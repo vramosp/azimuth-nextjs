@@ -245,7 +245,7 @@ models:
       - type: image
         name: photo
         label: Photo
-        default: images/
+        default: images/review3.jpg
   landing:
     type: page
     label: Landing Page
