@@ -238,7 +238,10 @@ models:
       - type: markdown
         name: bio
         label: Bio
-        default: T
+        default: >-
+          Short bios are typically used to provide a summary of an individual's
+          accomplishments, an overview of their career history and a description
+          of their professional goals.
       - type: image
         name: photo
         label: Photo
