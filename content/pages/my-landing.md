@@ -33,6 +33,11 @@ sections:
             has_icon: true
             icon: arrow-right
             icon_position: right
+  - section_id: lorem-ipsum
+    title: lorem-ipsum
+    subtitle: lorem-ipsum
+    actions: []
+    type: section_cta
   - type: section_cta
     title: This is a call to action block
     subtitle: This is an optional description for the call to action block.
