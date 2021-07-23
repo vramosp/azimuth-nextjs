@@ -40,6 +40,11 @@ sections:
       - label: Get Started
         url: '#'
         style: secondary
+  - section_id: lorem-ipsum
+    title: This is a call to action block
+    subtitle: This is an optional description for the call to action block.
+    actions: []
+    type: section_cta
 seo:
   title: ''
   description: ''
