@@ -505,9 +505,9 @@ models:
           type: model
           models:
             - action
-            - label: Get Started
-                url: '#'
-                style: secondary
+              label: Get Started
+              url: '#'
+              style: secondary
     labelField: title
   section_faq:
     type: object
