@@ -558,6 +558,7 @@ models:
         name: title
         label: Title
         description: The title of the section
+        default: This is a call to action block
       - type: string
         name: subtitle
         label: Subtitle
